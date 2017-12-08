@@ -1,0 +1,558 @@
+/**
+	Author : Januar Fonti
+**/
+
+@font-face {
+    font-family: 'calluna_sansregular';
+    src: url('../fonts/calluna/CallunaSansRegular-webfont.eot');
+    src: url('../fonts/calluna/CallunaSansRegular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/calluna/CallunaSansRegular-webfont.woff2') format('woff2'),
+         url('../fonts/calluna/CallunaSansRegular-webfont.woff') format('woff'),
+         url('../fonts/calluna/CallunaSansRegular-webfont.ttf') format('truetype'),
+         url('../fonts/calluna/CallunaSansRegular-webfont.svg#calluna_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    padding-top: 80px;
+}
+
+
+
+.login {
+	background-color: #e84c3d;
+	font-family: 'calluna_sansregular';
+}
+
+.main {
+  background-color: #e5e5e5;
+  font-family: 'calluna_sansregular';
+}
+
+.link-login a{
+	color : #e84c3d;
+}
+
+
+.navbar {
+	min-height:40px !important;
+	border-radius:0px !important;
+	background-image: url('../images/navbar-border.jpg');
+    background-repeat: repeat-x;
+    background-position: top left;
+    padding-top: 5px; /*Height of the image*/
+    
+}
+
+.navbar-default {
+  background-color: #fff;
+  border-color: #e7e7e7;
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  margin-top: -3px;
+  padding: 15px 15px;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.navbar-user {
+    height: 40px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.navbar-content
+{
+    width:320px;
+    padding: 15px;
+    padding-bottom:0px;
+}
+.navbar-content:before, .navbar-content:after
+{
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.navbar-nav.navbar-right:last-child {
+margin-right: 15px !important;
+}
+.navbar-footer 
+{
+    background-color:#DDD;
+}
+.navbar-footer-content { padding:15px 15px 15px 15px; }
+.dropdown-menu {
+padding: 0px;
+overflow: hidden;
+}
+
+.form-signin
+{
+    max-width: 550px;
+    padding: 15px;
+    margin: 0 auto;
+
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+
+.judul-form
+{
+	color: #616161;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: 23px;
+    border-radius: 3px;
+    
+    border: 0px;
+
+    
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 23px;
+    border-radius: 3px;
+    
+    border: 0px;
+}
+
+.register
+{
+    margin-bottom: 23px;
+    border-radius: 3px;
+    background-color: #d3d3d3;
+    border: 0px;
+}
+
+
+.account-wall
+{
+    margin-top: 80px;
+    width: 300px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.account-wall-register
+{
+    margin-top: 50px;
+    padding: 40px 0px 20px 0px;
+    margin-bottom: 50px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.login-title
+{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: -80px auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}
+
+.bg-pink
+{
+	background-color: #e84c3d;
+	color: #fff;
+}
+
+.bg-green
+{
+    background-color: #68d39d;
+    color: #fff;
+}
+
+.bg-yellow
+{
+    background-color: #ffd202;
+    color: #fff;   
+}
+
+
+.bs-sidebar{
+    height: 140px;
+}
+
+.bs-sidebar-dosen{
+    height: 400px;
+}
+
+.bs-sidebar-admin{
+    height: 270px;
+}
+
+.bs-sidebar-mhs{
+    height: 270px;
+     width: 360px;
+}
+
+.bs-sidebar.affix {
+  top: 25px;
+}
+
+.bs-sidebar-dosen.affix-dosen {
+  top: 25px;
+  width: 360px;
+}
+
+.bs-sidebar-admin.affix-admin{
+  top: 25px;
+  width: 260px;
+}
+
+.bs-sidebar-dosen-detail{
+    height: 470px;
+     width: 360px;
+}
+
+
+
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color:rgba(255,255,255,1);
+  border: 0px solid #e3e3e3;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.icon-sidebar
+{
+    padding-bottom: 20px;
+}
+
+.icon-sidebar img
+{
+    width: 88px;
+    margin-left: 13px;
+    padding-bottom: 20px;
+}
+
+.icon-sidebar img:hover
+{
+    opacity: 0.7;
+}
+
+
+
+.icon-sidebar a:hover
+{
+    text-decoration: none;
+}
+
+
+
+.panel-hijau {
+  border : 0px;
+}
+.panel-hijau > .panel-heading {
+  color: #fff;
+  background-color: #68D39D;
+  border-color: #68D39D;
+}
+.panel-hijau > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #68D39D;
+}
+.panel-hijau > .panel-heading .badge {
+  color: #428bca;
+  background-color: #fff;
+}
+.panel-hijau > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #68D39D;
+}
+
+
+.panel-biru {
+  border : 0px;
+}
+.panel-biru > .panel-heading {
+  color: #fff;
+  background-color: #3598DB;
+  border-color: #3598DB;
+}
+.panel-biru > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #3598DB;
+}
+.panel-biru > .panel-heading .badge {
+  color: #428bca;
+  background-color: #fff;
+}
+.panel-hbiru > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #3598DB;
+}
+
+.badge {
+
+}
+
+.badge-hijau {
+    background-color: #2ecc71;
+}
+
+.judul-sidebar{
+    padding-left: 15px;
+    margin-top: -20px;
+}
+
+.bg-blue 
+{
+    background-color: #3598DB;
+    color: #fff;
+}
+
+.kotak 
+{
+    padding: 5px 5px 5px 5px;
+}
+
+.kotak .angka {
+    font-size: 30px;
+}
+
+.tipe-challenge
+{
+    padding-top: 10px;
+}
+
+.kolom-kanan
+{
+    padding-top: 50px;
+}
+
+.kolom-kanan-admin
+{
+    padding-top: 30px;
+}
+
+.well-challenges {
+  min-height: 20px;
+  padding: 0px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+
+.kotak-bawah
+{
+    margin-top: -20px;
+}
+
+.panel-body-challenges {
+  padding: 0px;
+  margin:-7px;
+}
+
+.challenges
+{
+    min-height: 300px;
+    width: 100%;
+    display: inline-block;
+}
+
+.mata_kuliah
+{
+    min-height: 200px;
+    width: 100%;
+    display: inline-block;
+}
+
+
+.angka-challenges
+{
+    font-size: 50px;
+    margin-bottom:-10px;
+    }
+
+span.essay
+{
+    background: #9b59b6;
+    border-radius: 2px;
+    color: #f5f5f5;
+    font-weight: bold;
+    padding: 2px 4px;
+}
+
+span.submission
+{
+    background: #1abc9c;
+    border-radius: 2px;
+    color: #f5f5f5;
+    font-weight: bold;
+    padding: 2px 4px;
+}
+
+
+span.quiz
+{
+    background: #AC92EC;
+    border-radius: 2px;
+    color: #f5f5f5;
+    font-weight: bold;
+    padding: 2px 4px;
+}
+
+.panel-heading.essay
+{
+    background-color: #9b59b6;
+    color: #f5f5f5;
+}
+
+.panel-heading.submission
+{
+    background-color: #1abc9c;
+    color: #f5f5f5;
+}
+
+
+.panel-heading.quiz
+{
+    background-color: #AC92EC;
+    color: #f5f5f5;
+}
+
+
+
+.btn-hapus {
+  color: #fff;
+  background-color: #c0392b;
+  border-color: #c0392b;
+}
+.btn-hapus:hover,
+.btn-hapus:focus,
+.btn-hapus:active,
+.btn-hapus.active,
+.open > .dropdown-toggle.btn-hapus {
+  color: #fff;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+.btn-hapus:active,
+.btn-hapus.active,
+.open > .dropdown-toggle.btn-hapus {
+  background-image: none;
+}
+.btn-hapus.disabled,
+.btn-hapus[disabled],
+fieldset[disabled] .btn-hapus,
+.btn-hapus.disabled:hover,
+.btn-hapus[disabled]:hover,
+fieldset[disabled] .btn-hapus:hover,
+.btn-hapus.disabled:focus,
+.btn-hapus[disabled]:focus,
+fieldset[disabled] .btn-hapus:focus,
+.btn-hapus.disabled:active,
+.btn-hapus[disabled]:active,
+fieldset[disabled] .btn-hapus:active,
+.btn-hapus.disabled.active,
+.btn-hapus[disabled].active,
+fieldset[disabled] .btn-hapus.active {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+.btn-hapus .badge {
+  color: #5cb85c;
+  background-color: #fff;
+}
+
+
+
+/*Panel tabs*/
+.panel-tabs {
+    position: relative;
+    bottom: 30px;
+    clear:both;
+    border-bottom: 1px solid transparent;
+}
+
+.panel-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+}
+
+.panel-tabs > li > a {
+    margin-right: 2px;
+    margin-top: 4px;
+    line-height: .85;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    color: #ffffff;
+}
+
+.panel-tabs > li > a:hover {
+    border-color: transparent;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.panel-tabs > li.active > a,
+.panel-tabs > li.active > a:hover,
+.panel-tabs > li.active > a:focus {
+    color: #fff;
+    cursor: default;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: rgba(255,255,255, .23);
+    border-bottom-color: transparent;
+}
+
+.form-control-static-profile p{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-bottom: 0;
+}

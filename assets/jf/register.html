@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register - Belajar Disini</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style-login.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-select.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="login">
+      <!--NAVBAR-->
+
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="assets/images/logo.png" /></a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#" data-toggle="modal" data-target="#tentang">Tentang</a></li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#bantuan">Bantuan</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+
+      <!--NAVBAR-->
+<div class="container">
+      
+      <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6" style="margin-top:200px;">
+          <img class="img-responsive" width="80%" src="assets/images/content-pendaftaran.jpg" />
+      </div>
+
+      <div class="col-xs-6 col-md-6">
+          <div class="account-wall-register">
+                <img class="profile-img" src="assets/images/logo_user.png"
+                    alt="">
+                <h3 class="text-center judul-form">Register</h3>
+                <form class="form-signin">
+                
+                <select name="id_kategori" class="selectpicker form-control register" data-live-search="true">
+                    <option value="Mahasiswa">Mahasiswa</option> 
+                    <option value="Mahasiswa">Dosen</option> 
+                </select>
+                <input type="text" class="form-control" placeholder="Nama" required>
+                <input type="text" class="form-control" placeholder="Email" required>
+                <input type="text" class="form-control" placeholder="Username" required>
+                <input type="password" class="form-control" placeholder="Password" required>
+                <input type="password" class="form-control" placeholder="Konfirmasi Password" required>
+                <input type="password" class="form-control" placeholder="Foto" required>
+                <button class="btn btn-lg btn-primary " type="submit">
+                    Daftar !</button>
+                <a class="btn btn-lg btn-success" href="index.html">Kembali</a>
+                </form>
+            </div>
+      </div>
+      </div>
+      
+          
+      </div>
+
+      <div class="modal fade" id="tentang" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header bg-pink">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title"><i class="fa fa-info"></i> Tentang</h4>
+            </div>
+            <div class="modal-body">
+              <p><strong>BELAJAR DISINI</strong> merupakan media pembelajaran antara mahasiswa dan dosen.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="bantuan" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header bg-pink">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title"><i class="fa fa-envelope"></i> Bantuan</h4>
+            </div>
+            <div class="modal-body">
+              <p>Untuk pertanyaan seputar <strong>BELAJAR DISINI</strong> bisa langsung menghubungi admin via email <a href="mailto:belajardisini2014@gmail.com">belajardisini2014[at]gmail[dot]com</a>. </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-select.js"></script>
+    <script type="text/javascript">
+        $(window).on('load', function () {
+
+            $('.selectpicker').selectpicker({
+                'selectedText': 'cat'
+            });
+
+            // $('.selectpicker').selectpicker('hide');
+        });
+    </script>
+  </body>
+</html>

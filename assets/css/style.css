@@ -1,0 +1,14 @@
+.container {
+  padding-right: 100px;
+  padding-left: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content {
+	padding-top: 20px;
+}
+
+.kotak {
+	margin-top: 50px;	
+}
